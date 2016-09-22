@@ -1,0 +1,113 @@
+/* Selector por tag */
+p {
+	color: red;
+}
+
+p.negrita{
+	font-weight: bold;
+	font-style: italic;
+	font-family: arial,tahoma,sans-serif;
+	font-size: 20px;
+	background: #cccccc;
+
+	border-top-color: #ff9900;
+	border-top-width: 3px;
+	border-top-style: solid;
+
+	border-left-color: #ff0000;
+	border-left-width: 6px;
+	border-left-style: dashed;
+
+	width: 100%;
+	height: 300px;
+
+	text-align: center;
+
+	letter-spacing: 3px;
+
+	word-spacing: 5px;
+
+	background-image: url('baldomero.jpeg');
+
+	background-position: center center;
+}
+
+p.wiki{
+	text-align: center;
+	line-height: 1em;
+	text-decoration: underline;
+	text-transform: lowercase;
+	font-family: 'Merriweather', serif;
+	font-weight: 900;
+}
+
+ul{
+	list-style-image: url("logo.png");
+}
+
+li#segundo{
+	list-style: square;
+}
+
+ol{
+	list-style-type: upper-roman;
+}
+
+/* Selector por varios tags */
+h1 {
+	color: red;
+	color: rgb(255, 0, 0);
+	color: rgb(50%, 100%, 0%);
+	background: #226666;
+	text-align: center;
+	font-family: arial;
+	font-size: 30pt;
+}
+
+/* Selector por cascada */
+article p {
+	color: purple;
+}
+
+/* Selector por id */
+article#firma {
+	color: pink;
+}
+
+/* Selector por clase */
+article.cuerpo {
+	background: grey;
+}
+
+aside#relacionado {
+    background: green;
+}
+aside#relacionado p{
+    color:white;
+}
+
+p.destacado{
+    color:red;
+}
+
+
+aside{
+    background:green;
+}
+aside p{
+    color:white;
+}
+.destacado{
+    color:red;
+}
+
+body{
+
+}
+
+
+
+
+
+
+
