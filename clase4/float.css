@@ -1,0 +1,52 @@
+#absoluto{
+
+}
+#imagen{
+
+}
+
+#caja{
+	background-color: red;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+}
+
+#contenedor{
+	width: 100%;
+	height: 1000px;
+	background-color: #ccc;
+}
+
+.item{
+	background-color: steelblue;
+	height: 100px;
+	width: 100px;
+	margin: 5px;
+	float: left;
+}
+
+#contenido3{
+	width: 200px;
+	clear: both;
+}
+
+#contenido3:hover{
+	background-color: green;
+}
+
+#contenido3:hover a{
+	display: inline;
+}
+
+#linkContenido3 {
+	color: black;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#linkContenido3:hover{
+	color:red;
+}

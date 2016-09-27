@@ -1,0 +1,43 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#container{
+	background-color: #ccc;
+}
+
+#menu{
+	background-color: red;
+	max-width: 400px;
+	margin: 0px auto;
+	text-align: center;
+	position: fixed;
+	top:50px;
+	left:50px;
+}
+
+#menu ul li{
+	display: inline;
+}
+
+/*li#relativo{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}*/
+
+#sidebar{
+	width: 30%;
+	background-color: steelblue;
+}
+
+#sidebar a{
+	/*position: absolute;*/
+}
+
+#contenido{
+	width: 70%;
+	background-color: pink;
+	height: 1000px;
+}
