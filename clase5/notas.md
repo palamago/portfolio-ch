@@ -30,6 +30,7 @@ Esta propiedad nos permite establecer cual sera el contenedor de los elementos a
 
 ```css
 display: flex | inline-flex;
+```
 
 ###Flex Direction
 
@@ -78,7 +79,7 @@ align-items: flex-start | flex-end | center | stretch | baseline;
 Nos permite posicionar / distribuir elementos verticalmente, igual que align-items, solo que align-content solo funciona para lineas de elementos, por ejemplo cuando tenemos establecido un flex-wrap:wrap; y los elementos se posicionan en VARIAS LINEAS.
 
 ```css
-align-content: flex-start | flex-end | center | stretch | space-between | space-around ;
+align-content: flex-start | flex-end | center | stretch | space-between | space-around;
 ```
 
 #Para el hijo

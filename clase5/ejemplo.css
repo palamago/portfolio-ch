@@ -5,17 +5,16 @@
 	border: 5px solid orange;
 	padding: 10px;
 
-	display: flex;
-	flex-direction: row;
-	flex-wrap:wrap;
-
 	/*
 		display: flex | inline-flex;
-
+		flex-direction: row | column | row-reverse | column-reverse;
+		flex-wrap: no-wrap | wrap | wrap-reverse;
+		flex-flow:row wrap;
+		justify-content: flex-end | flex-start | center | space-around | space-between;
+		align-items: flex-start | flex-end | center | stretch | baseline;
+		align-content: flex-start | flex-end | center | stretch | space-between | space-around;
 	*/
-	//justify-content: center;
-	//align-items: center;
-	//align-content: space-between;
+
 }
 
 .item{
