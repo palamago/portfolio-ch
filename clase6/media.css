@@ -1,0 +1,51 @@
+/* 
+
+	@media screen and (min-width: 480px) {
+	
+	}
+
+	@media print {
+	
+	}
+
+ */
+
+.caja{
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	border: 1px solid #000;
+	background-color: steelblue;
+	font-family: arial;
+	font-size: 40px;
+	text-align: center;
+	color:#fff;
+}
+
+#caja1{
+	
+
+}
+
+#caja1:hover{
+
+}
+
+#caja2{
+	
+
+}
+
+#caja2:hover{
+
+}
+
+#caja3{
+	
+
+}
+
+#caja3:hover{
+
+}
+

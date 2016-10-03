@@ -3,7 +3,6 @@
 	background-color: #fff;
 	margin: 20px;
 	border: 5px solid orange;
-	padding: 10px;
 
 	display: flex;
 
@@ -26,14 +25,13 @@
 	color: #fff;
 	background-color: steelblue;
 	text-align: center;
-	margin: 10px;
 	padding: 10px;
 	height: 70px;
-	width: 300px;
+	
 
-	flex-basis:50px;
-	flex-grow:1;
+	flex-basis:100px;
 	flex-shrink:1;
+
 
 	order:2;
 
@@ -50,11 +48,10 @@
 
 }
 
-#item3{
-	flex-grow:2;
+#item3 {
 	flex-shrink:2;
+	background-color: red;
 	order:5;
-	/*width: 30px;
-	font-size: 30px;*/
-	align-self:flex-end;
+	/*font-size: 30px;
+	align-self:flex-end;*/
 }

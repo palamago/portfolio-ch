@@ -1,0 +1,68 @@
+/* 
+	background: linear-gradient(to top, #000, #ccc);
+	background: linear-gradient(45deg, #000, #ccc);
+	alpha
+	linear-gradient(red 10%, yellow 40%, green 50%);
+	background: repeating-linear-gradient(red, yellow 10%, green 20%);
+	background: radial-gradient(10% 40%, red, yellow, black);
+	background: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+ */
+
+.caja{
+	width: 400px;
+	height: 400px;
+	margin: 20px;
+	border: 1px solid #000;
+	float: left;
+	font-family: arial;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 100px;
+	color:steelblue;
+}
+
+#caja1{
+	/*Gradiente lineal dos colores horizontal*/
+
+}
+
+#caja2{
+	/*Gradiente lineal tres colores vertical*/
+
+}
+
+#caja3{
+	/*Gradiente lineal dos colores diagonal*/
+
+}
+
+#caja4{
+	/*Porcentajes*/
+
+}
+
+#caja5{
+	/*Repeating*/
+
+}
+
+#caja6{
+	/*Gradiente radial dos colores centro*/
+
+}
+
+#caja7{
+	width: 600px;
+	/* Forma de gradiente circular: ellipse | circle */
+
+}
+
+#caja8{
+	/* Porcentajes */
+
+}
+
+#caja9{
+	/*Gradiente radial tres colores forma del gradiente closest-side | farthest-side | closest-corner |farthest-corner */
+
+}
