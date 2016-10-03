@@ -9,6 +9,9 @@
 	}
 
  */
+ body{
+ 	background-color: grey;
+ }
 
 .caja{
 	width: 200px;
@@ -48,4 +51,37 @@
 #caja3:hover{
 
 }
+
+@media screen and (max-width: 600px) {
+	.caja{
+		background-color: green;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.caja{
+		background-color: red;
+		width: 100%;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	body{
+		background-color: yellow;
+	}
+}
+
+@media print {
+	.caja{
+		background-color: white;
+	}
+}
+
+@media (orientation: portrait) {
+	body{
+		background-color: brown;
+	}
+}
+
+
 

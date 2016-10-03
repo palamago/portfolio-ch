@@ -45,9 +45,48 @@
 	color:#fff;
 }
 
-#caja1{
-	
+@keyframes ejemplo {
+    from {
+    	background-color: red;
+    }
+    to {
+    	background-color: yellow;
+    }
+}
 
+@keyframes movimiento {
+    0%   {
+    	background-color:red; 
+    	left:0px; 
+    	top:0px;
+    }
+    25%  {
+    	background-color:yellow; 
+    	left:400px; 
+    	top:0px;
+    }
+    50%  {
+    	background-color:blue;
+    	left:200px;
+    	top:200px;
+    }
+    75%  {
+    	background-color:green;
+    	left:0px;
+    	top:200px;
+    }
+    100% {
+    	background-color:red;
+    	left:0px;
+    	top:0px;
+    }
+}
+
+#caja1{
+	animation-name: ejemplo;
+	animation-duration: 4s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
 }
 
 #caja1:hover{
@@ -56,19 +95,55 @@
 
 #caja2{
 	
-
 }
 
 #caja2:hover{
-
+	animation-name: ejemplo;
+	animation-duration: 2s;
+	animation-iteration-count:3;
+	animation-direction: alternate;
+	animation-timing-function: ease;
 }
 
 #caja3{
-	
 
+	animation: movimiento 3s infinite;
+	animation-timing-function: ease-out;
+	position: absolute;
 }
 
 #caja3:hover{
 
 }
+
+/* Pase por los colores primarios de manera infitita y gire sobre el Z  */
+
+@keyframes caja4 {
+    0%      {background-color: red; }
+    50%  {background-color: yellow; transform: rotateZ(90deg);}
+    100% {background-color: blue; transform: rotateZ(180deg);}
+}
+
+
+#caja4{
+    animation-name: caja4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#caja4:hover{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

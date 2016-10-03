@@ -8,61 +8,65 @@
 	background: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
  */
 
+body{
+	
+}
+
 .caja{
-	width: 400px;
-	height: 400px;
+	width: 200px;
+	height: 200px;
 	margin: 20px;
 	border: 1px solid #000;
 	float: left;
 	font-family: arial;
 	font-size: 40px;
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 20px;
 	color:steelblue;
 }
 
 #caja1{
 	/*Gradiente lineal dos colores horizontal*/
-
+	background: linear-gradient(#000, #ccc, red, rgb(100,230,23));
 }
 
 #caja2{
 	/*Gradiente lineal tres colores vertical*/
-
+	background: linear-gradient(to bottom, #000, #ccc, steelblue);
 }
 
 #caja3{
 	/*Gradiente lineal dos colores diagonal*/
-
+	background: linear-gradient(5deg, #000, #ccc, steelblue);
 }
 
 #caja4{
 	/*Porcentajes*/
-
+	background: linear-gradient(rgba(255, 0, 0,0.5) 10%, rgba(0, 255, 0,1) 40%, steelblue 50%);
 }
 
 #caja5{
 	/*Repeating*/
-
+	background: repeating-linear-gradient(45deg,red, yellow 10%, red 20% );
 }
 
 #caja6{
 	/*Gradiente radial dos colores centro*/
-
+	background: radial-gradient(red, yellow, steelblue);
 }
 
 #caja7{
 	width: 600px;
 	/* Forma de gradiente circular: ellipse | circle */
-
+	background: radial-gradient(circle,red, yellow, black);
 }
 
 #caja8{
 	/* Porcentajes */
-
+	background: radial-gradient(100% 10%,red, yellow, black);
 }
 
 #caja9{
 	/*Gradiente radial tres colores forma del gradiente closest-side | farthest-side | closest-corner |farthest-corner */
-
+	background: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
 }

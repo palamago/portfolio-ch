@@ -13,11 +13,12 @@
 	rotateX()
 	rotateY()
 	rotateZ()
+	rotate()
 */
 
 .caja{
-	width: 400px;
-	height: 400px;
+	width: 200px;
+	height: 200px;
 	margin: 20px;
 	border: 1px solid #000;
 	float: left;
@@ -25,33 +26,34 @@
 	font-family: arial;
 	font-size: 40px;
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 50px;
 	color:#fff;
 }
 
 #caja1{
 	/*Translate*/
-
+	transform: translate(50px,50px);
 }
 
 #caja2{
 	/*Rotate*/
-
+	transform: rotate(45deg);
 }
 
 #caja3{
 	/*Scale*/
-
+	transform: scale(0.5,0.5);
 }
 
 #caja4{
 	/*skewX*/
-
+	transform: skewX(30deg);
+	transform: skewY(20deg);
 }
 
 #caja5{
 	/*skewY*/
-
+	transform: skew(20deg, 30deg);
 }
 
 #caja6{
@@ -66,4 +68,16 @@
 
 #caja8{
 	/* 3D */
+	transform: rotateY(50deg) rotateX(50deg) rotateZ(30deg);
+	background-image: url('http://informacionde.info/wp-content/uploads/2016/02/mono-04.jpg');
+	background-size: cover;
 }
+
+
+
+
+
+
+
+
+
