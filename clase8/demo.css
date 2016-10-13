@@ -1,0 +1,73 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+section{
+
+}
+
+@keyframes movimiento1 {
+    from {
+    	background-position: center left;
+    }
+    to {
+    	background-position: center right;
+    }
+}
+
+@keyframes movimiento2 {
+    from {
+    	background-position: center left;
+    	opacity: 1;
+    }
+    to {
+    	background-position: center right;
+    	opacity: 0;
+    }
+}
+
+
+.fade{
+	width: 100%;
+	height: 100%;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+
+}
+
+#fade1{
+	background-image: url('img.jpg');
+	animation-name: movimiento1;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+}
+
+#fade2{
+	background-image: url('img2.jpg');
+	animation-name: movimiento2;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+
+}
+
+
+
+
+
+
+
