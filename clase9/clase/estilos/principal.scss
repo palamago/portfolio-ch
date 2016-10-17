@@ -1,0 +1,60 @@
+@import '_reset.scss';
+@import '_variables.scss';
+
+h2 {
+	text-align: center;
+	color: $colorPrincipal;
+	padding: $distancia * 3;
+}
+
+header{
+	background: $colorPrincipal;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	a {
+		padding:$distancia;
+		background: darken($colorPrincipal,25%);
+		color:$colorPrincipal;
+	}
+}
+
+article {
+	width: $ancho;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.col-4{
+		flex-basis: ($ancho / 4) - ($colPadding * 2);
+		padding: $colPadding;
+		/*background: rgb($valor,$valor+50,$valor+100);*/
+		background: $colColor;
+		p{
+			margin: $distancia;	
+		}
+	}
+}
+
+footer{
+	background:invert($colorPrincipal);
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	a{
+		background: $colorPrincipal;
+		color:lighten($colorPrincipal,25%);
+		padding:$distancia;
+		&:hover{
+			background: darken($colorPrincipal,10%);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+/* VARIABLES */
+
+$primaryColor: #eeffcc;
+
+header{
+	background: $primaryColor;
+	padding: 10px;
+}
+
+footer{
+	background: $primaryColor;
+	padding: 10px;
+}
+
+.btn{
+	display: inline-block;
+}
+
+/* FLAGS */
+/* !global y !default */
+
+
+/* MATH */
+
+$container-width: 100%;
+$padding: 5%;
+
+article {
+  width: $container-width;
+  display: flex;
+  flex-direction: row;
+}
+
+.col-4 {
+  flex-basis: ($container-width / 4) - ($padding * 2);
+  padding: $padding;
+}
+
+
+/* FUNCTIONS */
+/* http://sass-lang.com/documentation/Sass/Script/Functions.html */
+$mainColor: #ff99ee;
+.btn{
+	background: $mainColor;
+	color: darken($mainColor,25%);
+	border: 4px solid darken($mainColor,20%);
+	padding: 10px;
+}
+.btn:hover{
+	background: lighten($mainColor,10%);
+}
+
+/* NESTED */
+
+/* IMPORT */
+@import "_reset.scss";
+
