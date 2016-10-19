@@ -1,0 +1,126 @@
+@import '_reset.scss';
+@import '_variables.scss';
+
+h2 {
+	text-align: center;
+	color: $colorPrincipal;
+	padding: $distancia * 3;
+}
+
+header{
+	background: $colorPrincipal;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	a {
+		padding:$distancia;
+		background: darken($colorPrincipal,25%);
+		color:$colorPrincipal;
+	}
+}
+
+article {
+	width: $ancho;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.col-4{
+		flex-basis: ($ancho / 4) - ($colPadding * 2);
+		padding: $colPadding;
+		/*background: rgb($valor,$valor+50,$valor+100);*/
+		background: $colColor;
+		p{
+			margin: $distancia;	
+		}
+	}
+}
+
+footer{
+	background:invert($colorPrincipal);
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	a{
+		background: $colorPrincipal;
+		color:lighten($colorPrincipal,25%);
+		padding:$distancia;
+		&:hover{
+			background: darken($colorPrincipal,10%);
+		}
+	}
+}
+
+
+/* MIXINS */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.btn { 
+	@include border-radius(10px); 
+}
+
+.col-4 { 
+	@include border-radius(50%); 
+}
+
+
+/* EXTEND */
+
+%btn {
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+}
+
+.btn-red {
+  @extend %btn;
+  background-color: red;
+}
+
+.btn-blue {
+  @extend %btn;
+  background-color: blue;
+}
+
+.btn-orange {
+  @extend %btn;
+  background-color: orange;
+}
+
+
+/* BEM (Block,Element,Modifier) 
+ - No se ponen IDs, sólo clases.
+ - Pueden quedar clases largas
+*/
+
+.header {}
+
+
+.header__logo {} 
+.header__tagline {} 
+.header__searchbar {}
+.header__navigation {}
+
+
+.label { 
+background: #eee; 
+    border-radius: 505; 
+    color: #333; 
+    font-size: 1rem; 
+    } 
+
+.label--alert { 
+    @extend .label; 
+    background: #da4531; 
+    color: #fff; 
+    }
+
+
+
+

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  text-align: center;
+  color: red;
+  padding: 30px; }
+
+header {
+  background: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  header a {
+    padding: 10px;
+    background: maroon;
+    color: red; }
+
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  article .col-4 {
+    flex-basis: 23%;
+    padding: 1%;
+    /*background: rgb($valor,$valor+50,$valor+100);*/
+    background: #ccc; }
+    article .col-4 p {
+      margin: 10px; }
+
+footer {
+  background: cyan;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  footer a {
+    background: red;
+    color: #ff8080;
+    padding: 10px; }
+    footer a:hover {
+      background: #cc0000; }
+
+/* MIXINS */
+.btn {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.col-4 {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+
+/* EXTEND */
+.btn-red, .btn-blue, .btn-orange {
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center; }
+
+.btn-red {
+  background-color: red; }
+
+.btn-blue {
+  background-color: blue; }
+
+.btn-orange {
+  background-color: orange; }
+
+/* BEM (Block,Element,Modifier) 
+ - No se ponen IDs, sólo clases.
+ - Pueden quedar clases largas
+*/
+.label, .label--alert {
+  background: #eee;
+  border-radius: 505;
+  color: #333;
+  font-size: 1rem; }
+
+.label--alert {
+  background: #da4531;
+  color: #fff; }
+
+/*# sourceMappingURL=principal.css.map */

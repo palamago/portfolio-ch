@@ -1,0 +1,84 @@
+@import '_reset.scss';
+
+/* VARIABLES */
+
+$color_principal: steelblue;
+$ancho: 1000px;
+
+/* MIXIN */
+@mixin redondear($radius) {
+	border-radius: $radius;
+	border: 3px solid pink;
+}
+
+@mixin cuadradizar($size){
+	width: $size;
+	height: $size;
+}
+
+@mixin rectangulizar($size1,$size2:100px){
+	width: $size1;
+	height: $size2;
+}
+
+/* EXTEND */
+%texto_blanco {
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ESTILOS */
+
+body {
+	background-color: $color_principal;
+	color: darken($color_principal,10%);
+
+	h1{
+		width: $ancho/2;
+		background-color: lighten($color_principal, 10%);
+		@include redondear(10px);
+		@extend %texto_blanco;
+	}
+
+}
+
+header {
+	$color_principal: red;
+	background-color: $color_principal;
+	.btn{
+		display: inline-block;
+		@include redondear(50%);
+		@include cuadradizar(100px);
+	}
+}
+
+footer {
+	background-color: $color_principal;
+	.btn{
+		display: inline-block;
+		border: 1px solid white;
+		@include rectangulizar(50px,200px);
+	}
+}
+
+
+
+/* EXTENDS */
+
+article{
+	p{
+		@extend %texto_blanco;
+	}
+}
+
+
+
+
+
+
+
+
+
+

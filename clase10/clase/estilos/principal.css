@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/* VARIABLES */
+/* MIXIN */
+/* EXTEND */
+body h1, article p {
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center; }
+
+/* ESTILOS */
+body {
+  background-color: steelblue;
+  color: #38678f; }
+  body h1 {
+    width: 500px;
+    background-color: #699bc4;
+    border-radius: 10px;
+    border: 3px solid pink; }
+
+header {
+  background-color: red; }
+  header .btn {
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid pink;
+    width: 100px;
+    height: 100px; }
+
+footer {
+  background-color: steelblue; }
+  footer .btn {
+    display: inline-block;
+    border: 1px solid white;
+    width: 50px;
+    height: 200px; }
+
+/* EXTENDS */
+
+/*# sourceMappingURL=principal.css.map */
