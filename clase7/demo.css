@@ -81,6 +81,7 @@ section{
 #otra {
 	background-color: #132615;
 	padding: 20px;
+	min-height: 100%;
 }
 
 #otra p{
@@ -90,6 +91,7 @@ section{
 
 #work{
 	width: 100%;
+	min-height: 100%;
 	display: flex;
 	flex-direction:row;
 	flex-wrap: wrap;

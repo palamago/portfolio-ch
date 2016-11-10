@@ -1,3 +1,27 @@
+html, body, .container-fluid{
+	height: 100%;
+}
+
+.carousel {
+	height: 100%;
+}
+
+.row {
+	height: 100%;
+}
+
+.carousel-inner{
+	height: 100%;
+}
+
+.item{
+	height: 100%;
+}
+
+.carousel-control{
+	height: 100%;
+}
+
 span.badge-flat{
 	border-radius: 0;
 }
@@ -5,3 +29,21 @@ span.badge-flat{
 .badge-success{
 	background-color: green;
 }
+
+#item-1{
+	background-image: url('https://images6.alphacoders.com/407/407732.jpg');
+	background-size: cover;
+	background-position: center center;
+	
+}
+
+
+.navbar-default .navbar-nav .active a, 
+.navbar-default .navbar-nav .active a:focus, 
+.navbar-default .navbar-nav .active a:hover{
+	background: none;
+}
+
+
+
+
